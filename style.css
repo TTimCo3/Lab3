@@ -1,0 +1,19 @@
+body{
+    color: powderblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('dark-clouds-1500384891aVZ.jpg');
+}
+
+body:hover{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('dark-clouds-1500384891aVZ.jpg');
+}
+
+A {
+    color:red
+}
+
+A:hover{
+    color:plum
+}
