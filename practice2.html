@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>CSS Font Control</h1>
+    </head>
+    <body>
+        <p id="para" style="border-style: solid; border-width: 5px; border-color: black;">I can change color! I can also change width!</p>
+        <p>Border R value: <input type="text" id="b_red" value=""></p>
+        <p>Border G value: <input type="text" id="b_green" value=""></p>
+        <p>Border B value: <input type="text" id="b_blue" value=""></p>
+        <p>Border Width: <input type="text" id="b_width" value=""></p>
+        <p>Paragraph R value <input type="text" id="p_red" value=""></p>
+        <p>Paragraph G value: <input type="text" id="p_green" value=""></p>
+        <p>Paragraph B value: <input type="text" id="p_blue" value=""></p>
+        <button onclick="change_para()">Change the properties of the paragraph!</button>
+    </body>
+    <script>
+        function change_para(){
+        let b_red=document.getElementById("b_red").value;
+        let b_green=document.getElementById("b_green").value;
+        let b_blue=document.getElementById("b_blue").value;
+        let b_width=document.getElementById("b_width").value;
+        let p_red=document.getElementById("p_red").value;
+        let p_green=document.getElementById("p_green").value;
+        let p_blue=document.getElementById("p_blue").value;
+        let para=document.getElementById("para");
+        para.style.borderColor = "rgb("+b_red+','+b_green+','+b_blue+')';
+        para.style.borderWidth =b_width+"px";
+        para.style.color="rgb("+p_red+','+p_green+','+p_blue+')';
+        }
+    </script>
+</html>
